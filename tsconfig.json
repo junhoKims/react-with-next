@@ -19,11 +19,11 @@
     "strictNullChecks": true,
     "jsx": "preserve",
     "jsxImportSource": "@emotion/react",
-    "baseUrl": ".",
+    "typeRoots": ["./@types", "./node_modules/@types"],
+    "baseUrl": "./",
     "paths": {
       "*": ["node_modules/*", "src/*"]
-    },
-    "typeRoots": ["./@types", "./node_modules/@types"]
+    }
   },
   "include": [
     "next-env.d.ts",
