@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
+import { Button } from '@material-ui/core'
 import { css } from '@emotion/react'
 import Footer from 'components/Footer'
 import styles from 'styles/Home.module.css'
@@ -57,6 +58,10 @@ const Home: NextPage<{}> = () => (
           <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
         </a>
       </div>
+
+      <Button variant='outlined' color='primary'>
+        Primary
+      </Button>
     </main>
     <Footer />
   </div>
