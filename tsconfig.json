@@ -18,6 +18,7 @@
     "isolatedModules": true,
     "strictNullChecks": true,
     "jsx": "preserve",
+    "jsxImportSource": "@emotion/react",
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*", "src/*"]
