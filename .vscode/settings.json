@@ -1,0 +1,49 @@
+{
+  /** Default Setting */
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "trailing",
+  /** Typescript Compile */
+  "typescript.tsdk": "node_modules/typescript/lib",
+  /** excludes */
+  "files.exclude": {
+    "**/.idea": true
+  },
+  /** Off Suggestion */
+  "javascript.suggestionActions.enabled": false,
+  "typescript.suggestionActions.enabled": false,
+  /** Path Intellisense Mapping */
+  "path-intellisense.mappings": {
+    "/": "${workspaceRoot}/src",
+    "pages": "${workspaceRoot}/src/pages",
+    "styles": "${workspaceRoot}/src/styles",
+    "types": "${workspaceRoot}/src/types",
+    "components": "${workspaceRoot}/src/components",
+    "posts": "${workspaceRoot}/src/posts",
+    "apis": "${workspaceRoot}/src/apis"
+  },
+  /** Prettier Setting */
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  /** ESLint Auto Fix */
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": [
+      "document"
+    ]
+  }, 
+}
