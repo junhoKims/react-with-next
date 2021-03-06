@@ -59,7 +59,7 @@ const Home: NextPage<{}> = () => (
         </a>
       </div>
 
-      <Button variant='outlined' color='primary'>
+      <Button variant='contained' color='primary'>
         Primary
       </Button>
     </main>

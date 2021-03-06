@@ -1,8 +1,9 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { StylesProvider } from '@material-ui/core/styles'
+import { ThemeProvider, StylesProvider } from '@material-ui/core/styles'
 import { CssBaseline } from '@material-ui/core'
 import globals from 'styles/globals'
+import generateTheme from 'styles/theme'
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
@@ -11,10 +12,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
     </Head>
     {globals}
 
-    <StylesProvider injectFirst>
-      <CssBaseline />
-      <Component {...pageProps} />
-    </StylesProvider>
+    <ThemeProvider theme={generateTheme({ isDark: false })}>
+      <StylesProvider injectFirst>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </StylesProvider>
+    </ThemeProvider>
   </>
 )
 
